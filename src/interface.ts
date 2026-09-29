@@ -70,11 +70,18 @@ console.log(extendFunction({
 
 type arg  = string | null
 function abcde(obj: arg){
+    console.log(obj)
 
 }
 abcde("dirag")
 /*
 in this example we learn that if we want function which has only value of string or null we can use this type aliases
-*/ 
+
+
+
+difference of interface and type
+1)In Interface we can merge it but in type we cannot merge it.
+2)Interface is used to make shape of object while Type create type like string, number (data type).
+ */ 
 
 
