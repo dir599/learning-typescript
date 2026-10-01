@@ -51,6 +51,9 @@ class Abcd{
     name = "dirag"
 
     changeName(){
+        // if we create anything in method inside method can access.
+        let a;
+        a= "mango"
         this.name
         this.changeLastName()
     }
@@ -58,3 +61,5 @@ class Abcd{
         console.log("last name")
     }
 }
+
+// public and private access Modifier
