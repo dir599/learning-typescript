@@ -8,5 +8,13 @@ let username = "dirag";
 // Type annotations ->it means we tell  type of variable in ts
 let a: number | boolean | string;
 function abcd(a: number, b: string): void {
-    console.log("Learning type annotations")
+  console.log("Learning type annotations");
 }
+
+// example of type annotations
+
+let b: number | boolean;
+function efgh(c: string) {
+  console.log(c);
+}
+efgh("hello");
