@@ -55,3 +55,34 @@ function vehicle(start: Car | Bike){
         start.ride()
     }
 }
+
+// for object
+
+type chaiOrder = {
+    type: string,
+    sugar: number
+}
+
+function isChaiOrder(obj: any): obj is chaiOrder{
+    return (
+        typeof obj === "object" &&
+         obj !== null && 
+         typeof obj.type === "string" &&
+         typeof obj.sugar == "number"
+    )
+}
+
+function serveOrder(item: chaiOrder | string){
+    if(isChaiOrder(item)){
+        return `Serving ${item.type} chai with ${item.sugar} sugar`
+    }
+    return (`string is ${item}`)
+}
+console.log(serveOrder("dirag"))
+const order = {
+    type: "madka",
+    sugar: 2
+}
+
+console.log(serveOrder(order));
+
