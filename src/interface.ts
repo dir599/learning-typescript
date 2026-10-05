@@ -76,12 +76,47 @@ function abcde(obj: arg){
 abcde("dirag")
 /*
 in this example we learn that if we want function which has only value of string or null we can use this type aliases
+*/
+
+let student:  {
+    name: string,
+    class: number
+    roll: number
+    
+}
+
+student={
+    name: "dirag",
+    class: 12,
+    roll: 11
+}
 
 
+
+type Student1= {
+    name: string,
+    class: number
+}
+const info:Student1 = {
+    name: "hero",
+    class: 21
+}
+// reuse of Student1
+const info2: Student1={
+    name: "student2",
+    class: 22
+}
+
+
+// here we can multiple reuse the type Student1 while we cannot do in in student
+
+/*
 
 difference of interface and type
 1)In Interface we can merge it but in type we cannot merge it.
 2)Interface is used to make shape of object while Type create type like string, number (data type).
  */ 
+
+
 
 

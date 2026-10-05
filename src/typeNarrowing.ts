@@ -15,7 +15,7 @@ note: we use typeNarrowing when we don't know the exactly what type a
       value is, usually because you have a union type
 */
 
-function getChai(kind: string | number){
+function getChai1(kind: string | number){
    if(typeof kind === "string"){
     return `making ${kind} chai`
    }
@@ -86,7 +86,7 @@ const order = {
 }
 
 console.log(serveOrder(order));
-=======
+
 /*
 typeNarrowing -> is the process of taking board type(like a union of string | boolean) and 
 refining it into a more. specific, predictable type inside a conditional code block
